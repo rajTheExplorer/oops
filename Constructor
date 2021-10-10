@@ -1,0 +1,23 @@
+class employee
+{
+	String name;
+	String petName;
+	String cityName;
+	public employee(String NAME,String PETNAME,String CITYNAME)
+	{
+		this.name=NAME;
+		this.petName=PETNAME;
+		this.cityName=CITYNAME;
+	}
+}
+class employees
+{
+	
+	public static void main(String[] args) {
+		employee e1=new employee("raj","kaju","skht");
+		employee e2=new employee("sai","yamuna","srp");
+		System.out.println(e1.name);
+		System.out.println(e1.petName);
+		System.out.println(e1.cityName);
+	}
+}
