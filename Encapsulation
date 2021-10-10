@@ -1,0 +1,35 @@
+class tian//SBI
+{
+	String name="sai";
+	int myBalance=9000;
+	// public void phonepe(int upiPin)
+	// {
+	// 	if(upiPin==600006)
+	// 	{
+	// 		System.out.println(myBalance);
+	// 	}
+	// }
+
+}
+class tian1//HDFC
+{
+	String name="sai";
+	private int myBalance=18000;
+	public void phonepe(int upiPin)
+	{
+		if(upiPin==600006)
+		{
+			System.out.println(myBalance);
+		}
+	}
+
+}
+class encap
+{
+	public static void main(String[] args) {
+		tian t= new tian();
+		System.out.println(t.myBalance);
+		tian1 t1=new tian1();
+		t1.phonepe(600006);
+	}
+}
