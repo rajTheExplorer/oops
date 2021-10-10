@@ -1,0 +1,55 @@
+abstract class kfc2
+{
+	abstract  void  formula() ;
+	abstract   void standard () ;
+	abstract  void hikesal() ;
+	abstract  void  offers() ;
+
+
+}
+class kfc extends kfc2
+{
+	 static int count =0 ;
+	public  void formula()
+	{
+		System.out.println(" masala ");
+		count ++ ;
+	}
+	public  void standard()
+
+	{
+		System.out.println(" clean and fresh  ");
+		count++ ;
+		
+	}
+	public  void hikesal()
+	 {
+	 	count++ ;
+	 	System.out.println( " 20%");
+		
+	}
+	public  void  offers()
+	 {
+	 	count ++ ;
+		 System.out.println(" weekend oofers ");
+	}
+	public static void main(String[] args)
+	 {
+		kfc k = new kfc() ;
+		 k.formula() ;
+		 k.standard();
+		 k.hikesal();
+		 k.offers();
+
+		 if(count==4)
+		 {
+		 	System.out.println(" franchise aproved");
+		 }
+		 else 
+		 {
+		 	System.out.println("denied permission ");
+		 }
+
+
+	}
+}
