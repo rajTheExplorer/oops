@@ -1,0 +1,18 @@
+class methOveload
+{
+	public static void raj() {
+		System.out.println("savage");
+	}
+	public static void raj(int a) {
+		System.out.println("somewhat crazy");
+	}
+	public static void raj(int a,int b) {
+		System.out.println("calm and silent");
+	}
+	public static void main(String[] args) {
+		raj();
+		raj(10);
+		raj(10,20);
+	}
+
+}
