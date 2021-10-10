@@ -1,0 +1,49 @@
+abstract class hospitals
+{
+	abstract public void govtLicence();
+	abstract public void oxygenSupply();
+	abstract public void emergencyWard();
+	abstract public void medicalShop();
+	// public void beds();
+
+}
+class AICMEPermission extends hospitals
+{
+	static int count=0;
+	public void govtLicence()
+	{
+		count++;
+		// System.out.println("govt licence approved");
+	}
+	public void oxygenSupply()
+	{
+		count++;
+		// System.out.println("Adequate oxygen supply");
+	}
+	public void emergencyWard()
+	{
+		count++;
+		// System.out.println("arranged the emergency ward");
+	}
+	public void medicalShop()
+	{
+		count++;
+		// System.out.println("have medical shop");
+	}
+	public static void main(String[] args) {
+		AICMEPermission AICME=new AICMEPermission();
+		AICME.govtLicence();
+		AICME.oxygenSupply();
+		AICME.emergencyWard();
+		AICME.medicalShop();
+		if(count==4)
+		{
+			System.out.println("permission approved for setting up the hospital");
+		}
+		else
+		{
+			System.out.println("permission denied");
+		}
+	}
+
+}
