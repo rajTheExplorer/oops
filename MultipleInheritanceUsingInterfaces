@@ -1,0 +1,39 @@
+interface one
+{
+	public void meth1();
+}
+interface two 
+{
+	public void meth2();
+}
+interface three
+{
+	public void meth3();
+}
+class four implements one,two
+{
+	public void meth1() {
+		System.out.println("zebra");
+	}
+	public void meth2() {
+		System.out.println("yak");
+	}
+	public void meth3() {
+		System.out.println("wolf");
+	}
+}
+class five extends four 
+{
+	public void meth4() {
+		System.out.println("vulture");
+	}
+}
+
+class interSolve
+{
+	public static void main(String[] args) 
+	{
+		five f=new five();
+		f.meth3();
+	}
+}
