@@ -1,0 +1,49 @@
+interface one
+{
+	abstract void addFlights();
+	abstract void editFlightTimings();
+}
+interface two 
+{
+	abstract void deleteFlights();
+	abstract void deleteAllFlights();
+}
+class juniorAdmin implements one 
+{
+	public void addFlights()
+	{
+		System.out.println("junior admin adding flights");
+	}
+	public void editFlightTimings()
+	{
+		System.out.println("junior admin editing Flight Timings");
+	}
+}
+class seniorAdmin implements one,two 
+{
+	public void addFlights()
+	{
+		System.out.println("senior admin adding flights");
+	}
+	public void editFlightTimings()
+	{
+		System.out.println("senior admin editing Flight Timings");
+	}
+	public void deleteFlights()
+	{
+		System.out.println("senior admin deletingflights");
+	}
+	public void deleteAllFlights()
+	{
+		System.out.println("senior admin deleting all flights");
+	}
+	
+}
+class interProject
+{
+	public static void main(String[] args) {
+		juniorAdmin jA=new juniorAdmin();
+		seniorAdmin sA=new seniorAdmin();
+		sA.deleteAllFlights();
+	}
+}
